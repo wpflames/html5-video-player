@@ -1,0 +1,119 @@
+$green: #dbfb9d;
+$dark: #131313;
+
+@import "progress";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background-color: $dark;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  height: 70vh;
+  margin: 0px;
+  position: relative;
+}
+.container {
+  overflow-y: hidden;
+}
+.video-container {
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    background-color: $green;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+  }
+}
+
+h1 {
+  color: $dark;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.screen {
+  cursor: pointer;
+  background-color: #000 !important;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+video {
+  max-width: 400px;
+  width: 100%;
+}
+
+.controls {
+  max-width: 400px;
+  input {
+    width: 100%;
+    background: black !important;
+  }
+  .timestamp {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 5px 0;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    background: $dark;
+    margin: 0;
+    button {
+      color: $green;
+      background-color: transparent;
+      border: none;
+      margin: 0 5px;
+      background: black;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.caption {
+  color: white;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  .like {
+    position: relative;
+    i {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      color: $green;
+    }
+  }
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

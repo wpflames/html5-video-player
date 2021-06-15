@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="#">
+    <title>Video Player</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="video-container">
+            <div class="shape"></div>
+        <h1>Video Player</h1>
+    <video 
+        src="videos/gone.mp4" 
+        id="video" 
+        class="screen" 
+        poster="img/poster.png">
+    </video>
+    <div class="caption">
+        <div class="wrap">
+            <h3 class="artist">The Band</h3>
+            <p class="song">The Weight</p>
+        </div>
+        <div class="like">
+            <i class="fa fa-heart"></i>
+        </div>
+    </div>
+
+    <div class="controls">
+        <input 
+            type="range" 
+            id="progress" 
+            class="progress" 
+            min="0" 
+            max="100" 
+            step="0.1" 
+            value="0"
+        />
+        <div class="button-wrapper">
+            <div class="buttons">
+                <button class="btn" id="play">
+                    <i class="fa fa-play fa-2x"></i>
+                </button>
+                <button class="btn" id="stop">
+                    <i class="fa fa-stop fa-2x"></i>
+                </button>
+            </div>
+            <span class="timestamp" id="timestamp">00:00</span>
+        </div>
+        
+
+       
+
+        
+        
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
